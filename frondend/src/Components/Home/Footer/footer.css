@@ -1,0 +1,5 @@
+.main{
+    bottom: 0;
+    position: sticky;
+    z-index: 10000000;
+}

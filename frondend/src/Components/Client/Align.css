@@ -1,0 +1,119 @@
+body {
+    background-color: hsl(253, 98%, 82%);
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .full-page {
+    background-color: #b8a5fe;
+    padding: 2% 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 280px;
+    margin: 2% 0;
+  }
+  
+  .container {
+    width: 860px;
+    background-color: #ffffff;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .field-set {
+    margin-bottom: 20px;
+  }
+  
+  .field-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    margin-bottom: 5px;
+    display: flex;
+
+  }
+  
+  .field-input {
+    width: calc(100% - 22px);
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-top: 5px;
+  }
+  
+  .half-width-1 {
+    width: calc(8%);
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .half-width-2 {
+    width: calc(83.5% );
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .add-btn {
+    width: auto;
+    height: 38px;
+    background-color: #b8a5fe;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 84%;
+  }
+  
+  .plus-icon {
+    margin-left: 5px;
+  }
+  
+  .bordered-field {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .form-actions {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .reset, .submit {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    margin: 0 10px;
+  }
+  
+  .reset {
+    background-color: orangered;
+    margin-top: 4%;
+  }
+  
+  .submit {
+    background-color: rgb(11, 11, 65);
+    margin-top: 4%;
+  }
+  
+.line{
+    border: 1px solid black;
+    padding: 5%;
+    border-radius: 0.9%;
+}

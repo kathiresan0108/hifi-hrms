@@ -1,0 +1,275 @@
+.can-main{
+    background-color: white;
+}
+
+.can-header {
+    /* display: flex;
+    justify-content: space-between; */
+    margin-bottom: 20px;
+    padding: 1% 14% 1% 14%;
+    top: 0;
+    position: sticky;
+    z-index: 10000;
+}
+
+.can-header_logo img {
+    width: 200px;
+    height: auto;
+}
+
+.can-inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.can-search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 460px;
+}
+
+.can-search-text {
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.can-search-icon {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #0E0F30;
+}
+
+.can-job {
+    width: 130px;
+    height: 36px;
+    color: white;
+    background-color: #0E0F30;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 20px;
+}
+
+.can-notification-icon {
+    font-size: 25px;
+    color: #0E0F30;
+    margin-right: 20px;
+}
+
+.profileimg {
+    font-size: 25px;
+    color: #0E0F30;
+}
+
+.can-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.can-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    text-align: center;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: -80px;
+    width: 200px;
+}
+
+.can-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.can-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.can-dropdown:hover .can-dropdown-content {
+    display: block;
+}
+
+.can-cover {
+    position: relative;
+    padding-bottom: 45px;
+}
+
+.image1 {
+    width: 200px;
+    margin-left: -4px;
+}
+
+.image2 {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: auto;
+    border-radius: 300px;
+}
+
+.can-mobile-menu-icon {
+    display: none;
+}
+
+.notification {
+    display: none;
+}
+
+.job1 {
+    display: none;
+}
+
+.can-profile-button {
+    display: none;
+}
+
+/* Tablet and Mobile View */
+@media (max-width: 1024px) {
+    .inside {
+        justify-content: space-between;
+    }
+
+    .can-header_logo img {
+        width: 150px;
+    }
+
+    .can-search-container {
+        display: none;
+    }
+
+    .can-mobile-menu-icon {
+        display: block;
+        font-size: 30px;
+        color: #0E0F30;
+        cursor: pointer;
+        margin-left: 550px;
+    }
+
+    .job1 {
+        display: block;
+        width: 130px;
+        height: 36px;
+        color: white;
+        background-color: #0E0F30;
+        border: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-right: 20px;
+    }
+
+    .can-profile-button {
+        display: block;
+        width: 130px;
+        height: 36px;
+        color: white;
+        background-color: #0E0F30;
+        border: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-right: 20px;
+    }
+
+    
+
+    .can-dropdown{
+        display: none;
+    }
+
+    .notification {
+        display: block;
+        width: 130px;
+        height: 36px;
+        color: white;
+        background-color: #0E0F30;
+        border: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-right: 20px;
+    }
+
+    .can-search-container.open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        width: 60%;
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .can-search-text, .can-job, .can-notification-icon, .profileimg {
+        width: 100%;
+        margin: 10px 0;
+        float: right;
+    }
+
+    .can-notification-icon, .can-job {
+        display: none;
+    }
+
+    .can-dropdown-content {
+        position: relative;
+        margin: 0;
+        width: 100%;
+        display: block;
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    .can-search-icon {
+        margin-right: 10px;
+        display: none;
+    }
+
+    .can-profile-button {
+        width: 100%;
+        height: 36px;
+        color: white;
+        background-color: #0E0F30;
+        border: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .can-view-profile{
+        width: 100%;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .can-header_logo img {
+        width: 120px;
+    }
+
+    .can-mobile-menu-icon {
+        font-size: 24px;
+        margin-left: 50px;
+    }
+
+    .can-dropdown{
+        display: none;
+    }
+
+    .can-search-container.open {
+        top: 50px;
+    }
+}

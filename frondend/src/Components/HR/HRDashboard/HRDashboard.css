@@ -1,0 +1,132 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.dashboard {
+  padding: 20px;
+  margin: 0% 14% 0% 14%;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.dashboard-header input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.dashboard-header .add-btn {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stat {
+  background-color: #fff;
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat p {
+  font-size: 32px;
+  margin: 0;
+}
+
+.stat span {
+  font-size: 16px;
+  color: #666;
+}
+
+/* New Flexbox container for charts */
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.vacancy-stats,
+.chart-section,
+.skills-section {
+  background-color: #fff;
+  padding: 20px;
+  flex: 1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vacancy-stats h2,
+.chart-section h2,
+.skills-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .stats {
+      flex-direction: column;
+  }
+
+  .stat {
+      margin: 10px 0;
+  }
+
+  /* Stack charts vertically on smaller screens */
+  .charts-container {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header h1 {
+      font-size: 20px;
+  }
+
+  .dashboard-header input {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .dashboard-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .dashboard-header .add-btn {
+      margin-top: 10px;
+  }
+}

@@ -1,0 +1,259 @@
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+    /* padding: 0px 20px  0px 20px; */
+        margin-bottom: 20px;
+        padding: 1% 14% 1% 14%;
+        top: 0;
+        position: sticky;
+        z-index: 10000;
+        background-color: white;
+}
+.PROFILENAME{
+    color: black;
+}
+.add_job{
+    text-decoration: none;
+}
+
+.header_logo img {
+    width: 200px;
+    height: auto;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #0E0F30;
+}
+
+.menu-items {
+    /* display: none; */
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 1rem; */
+    padding-top: 2rem;
+}
+
+.search-text {
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-icon {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #0E0F30;
+    cursor: pointer;
+    position: absolute;
+    left: 59%;
+}
+
+.job {
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #0E0F30;
+    border: none;
+    width: 160px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-icons, .notification-icon, .profile {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #0E0F30;
+    cursor: pointer;
+}
+.profile a{
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #f9f9f9;
+    text-align: center;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.cover {
+    position: relative;
+    padding-bottom: 45px;
+}
+
+.image1 {
+    width: 100%;
+}
+
+.image2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+.noti{
+    display: none;
+}
+/* Media Queries for Mobile and Tablet */
+
+@media screen and (max-width: 768px) {
+    .header_logo img {
+        width: 260px;
+    }
+    .noti{
+        display: block;
+        margin-top: 10px;
+    color: white;
+    background-color: #0E0F30;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .menu-items.show {
+        display: flex;
+    }
+    .search-icon{
+        display: none;
+    }
+    .profile{
+        /* display: inline-block; */
+
+    }
+    .profile a{
+        display:inline-block;
+    }
+    
+
+    /* Hover effect for mobile screens - requires user to tap the icon */
+    .menu-icon:hover + .menu-items,
+    .menu-items.show {
+        z-index: 8;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+        position: absolute;
+        float: end;
+        top: 14%;
+        right: 0;
+        padding: 10px 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .search-container:hover .menu-item {
+        flex-direction: column;
+    }
+
+    .search-container {
+        width: 100%;
+        padding: 0px;
+        display: block;
+    }
+
+    .search-text {
+        width: 100%;
+    }
+    
+.chat-icons, .notification-icon{
+ display: none;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #0E0F30;
+    cursor: pointer;
+}
+
+
+    .job {
+        width: 98%;
+        display: block;
+        margin-top: 10px ;
+        margin-left: 20px;
+    }
+
+    .dropdown-content {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .image1 {
+        width: 100%;
+    }
+
+    .image2 {
+        width: 60px;
+        top: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header_logo img {
+        width: 160px;
+    }
+
+    .menu-icon {
+        font-size: 20px;
+    }
+
+    .menu-items {
+        padding: 10px;
+    }
+
+    .search-text {
+        font-size: 14px;
+    }
+
+    .job {
+        font-size: 14px;
+    }
+
+    .chat-icons, .notification-icon, .profile {
+        font-size: 18px;
+    }
+}

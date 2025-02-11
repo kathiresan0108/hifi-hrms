@@ -1,0 +1,102 @@
+.table-container {
+  width: 70%;
+  overflow-x: scroll;
+  margin-bottom: 280px;
+  
+  margin-right: 14%;
+  margin-left: 14%;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.user-table thead tr {
+  background-color: #f2f2f2;
+}
+
+.user-table th, .user-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.cv-button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.action-menu {
+  position: relative;
+}
+
+.action-button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.sub-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sub-menu button:hover {
+  background-color: #444;
+}
+
+.action-menu:hover .sub-menu {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .user-table th, .user-table td {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .cv-button, .action-button {
+    padding: 3px 6px;
+  }
+
+  .sub-menu button {
+    padding: 8px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .user-table th, .user-table td {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .cv-button, .action-button {
+    padding: 2px 4px;
+  }
+
+  .sub-menu button {
+    padding: 6px;
+  }
+}

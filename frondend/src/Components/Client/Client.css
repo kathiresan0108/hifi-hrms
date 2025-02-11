@@ -1,0 +1,367 @@
+/* .full-page{
+    background-color:#b8a5fe;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    height: 1954px;
+} */
+body{
+    height: auto;
+    width: auto;
+    background-color:hsl(253, 100%, 94%);
+ }
+.logo{
+    object-fit: cover;
+    margin-left: 39%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 280px;
+}
+.container{
+    width: 860px;
+    margin: 40px auto;
+    /* display: flex; */
+     margin-top:0%;
+    background-color: #ffffff;
+    padding: 10px;
+
+    /* padding-bottom: 400px; */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* height: 315px; */
+    margin-bottom: 3%;
+    padding: 40px;
+}
+.company-name{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-name-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.company-location{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-location-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.company-email{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-email-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.company-ph-no{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-ph-no-in-1{
+    width: 5%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+.company-ph-no-in{
+    width: 62%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.company-social-media{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+    font-size:larger;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-social-media-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.plus{
+    margin-left: 7%;
+}
+.add-btn{
+    margin-top: 0%;
+    margin-left: 69%;
+        width: 13%;
+        height: 38px;
+        background-color: #b8a5fe;
+        color: black;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 0%;
+        display: flex;
+        /* margin-left: 8%; */
+
+}
+.company-dept{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-dept-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.company-no-of-employees{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-no-of-employees-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.company-weblink{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-weblink-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.company-ceo{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-ceo-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.annual-income{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.annual-income-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.start-year{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.start-year-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.net-profit{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.net-profit-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.company-certification{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-certification-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.company-branch-no{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-branch-no-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.company-lichence{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:larger;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+.company-lichence-in{
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.reset{
+    /* margin-left: 37%; */
+    margin-top: 4%;
+    margin-bottom: 3%;
+    width: 20%;
+    height: 40px;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    /* margin-bottom: 3%; */
+    margin-left: 23%;
+}
+.submit{
+    margin-left: 4%;
+    /* margin-left: 37%; */
+    /* margin-top: 4%; */
+    margin-bottom: 3%;
+    width: 20%;
+    height: 40px;
+    background-color: rgb(11, 11, 65);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}

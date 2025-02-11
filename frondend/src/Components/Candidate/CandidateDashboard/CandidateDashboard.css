@@ -1,0 +1,198 @@
+/* src/CandidateDashboard.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 0.5% 14% 0 14%;
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.progress-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.progress-bar li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 30px;
+    font-size: 18px;
+    color: #3f51b5;
+    cursor: pointer;
+}
+
+.progress-bar li.active {
+    font-weight: bold;
+    color: #f05125;
+}
+
+.progress-bar li.active:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #f05125;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.job-cards {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.job-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.job-card .job-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.job-card .job-icons .icon {
+    font-size: 18px;
+    color: #777;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.job-card .job-icons .icon:hover {
+    color: #f05125;
+}
+
+.job-card .avatar {
+    margin-bottom: 15px;
+}
+
+.job-card .avatar img {
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+    padding: 3px;
+}
+
+.job-card .job-info {
+    margin-bottom: 20px;
+}
+
+.job-card .job-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job-card .salary-range {
+    font-size: 16px;
+    color: #777;
+}
+
+.job-card .apply-button {
+    padding: 10px 20px;
+    background: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.job-card .apply-button:hover {
+    background: #f05125;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .job-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dashboard-container {
+        /* flex-direction: column; */
+        height: 200vh;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+        height: 350vh;
+        
+    }
+
+    .progress-bar {
+        margin-bottom: 20px;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .job-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .job-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .job-card .job-title {
+        font-size: 18px;
+    }
+
+    .job-card .salary-range {
+        font-size: 14px;
+    }
+
+    .job-card .apply-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

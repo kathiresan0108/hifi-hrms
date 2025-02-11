@@ -1,0 +1,64 @@
+/* JobCard.css */
+.job-card {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .job-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .job-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .edit-button {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #333333;
+  }
+  
+  /* Media Query for Tablets */
+  @media (max-width: 768px) {
+    .job-card {
+      padding: 15px;
+    }
+  
+    .edit-button {
+      padding: 7px 14px;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 480px) {
+    .job-card {
+      padding: 10px;
+    }
+  
+    .edit-button {
+      padding: 5px 10px;
+    }
+  
+    .job-card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .job-card p {
+      font-size: 0.9rem;
+    }
+  }
+  

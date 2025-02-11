@@ -1,0 +1,81 @@
+/* src/components/JobPage.css */
+.candidate-job-page {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding: 2% 0% 0% 10%;
+    margin-bottom: 100PX;
+  }
+  
+  .job-details {
+    padding: 20px;
+    background-color: #ffffff;
+    margin-right: 20px;
+    flex: 0 0 30%;
+    border-radius: 8px;
+  }
+  
+  .job-description {
+    padding: 20px;
+    background-color: #ffffff;
+    flex: 0 0 50%;
+    border-radius: 8px;
+  }
+  
+  .job-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .job-details li {
+    margin-bottom: 10px;
+  }
+  
+  .job-description div {
+    margin-bottom: 20px;
+  }
+  
+  .job-description .actions button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #0E0F30;
+    color: white;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .candidate-job-page {
+      flex-direction: column;
+      margin-bottom: 200px;
+    }
+  
+    .job-details, .job-description {
+      margin-right: 0;
+      margin-bottom: 20opx;
+      flex: 1 1 auto;
+      margin-right: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .candidate-job-page {
+      padding: 10px;
+      margin-bottom: 270px;
+    }
+  
+    .job-details, .job-description {
+      padding: 10px;
+      width: 270px;
+      margin-bottom: 20px;
+    }
+  
+    .job-description .actions button {
+      padding: 6px 12px;
+      margin-bottom: 10px;
+      display: block;
+      width: 100%;
+    }
+  }
+  

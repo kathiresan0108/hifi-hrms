@@ -1,0 +1,158 @@
+/* Updated CSS with additional button styles for Remove button and About Me section */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.client-form {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  border: 2px solid darkgray;
+}
+
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-field {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.gender-group,
+.worktype-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.gender-group label,
+.worktype-group label {
+  font-weight: normal;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.add-more,
+.remove {
+  flex: 1;
+  padding: 10px;
+  margin-right: 5px;
+  background-color: #0E0F30;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.add-more:hover {
+  background-color: #0E0F40;
+}
+
+.remove {
+  background-color: #DC5C00;
+}
+
+.remove:hover {
+  background-color: #DC5C30;
+}
+
+.pd-submit-button {
+  width: 30%;
+  padding: 15px;
+  background-color: #0E0F30;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.pd-submit-button:hover {
+  background-color: #0E0F40;
+}
+
+.cancel-button {
+  width: 30%;
+  padding: 15px;
+  background-color: #DC5C00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.cancel-button:hover {
+  background-color: #DC5C30;
+}
+
+.submit-div{
+  align-items: center;
+  margin-left: 25%;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+  .client-form{
+    width: 250px;
+  }
+
+  .pd-submit-button {
+    width: 35%;
+    height: 20px;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 23px;
+  }
+
+  .cancel-button {
+    width: 35%;
+    height: 10px;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 23px;
+  }
+
+  .submit-div{
+    margin-left: 20%;
+  }
+}

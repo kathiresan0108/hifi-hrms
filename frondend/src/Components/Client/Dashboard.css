@@ -1,0 +1,66 @@
+/* Dashboard.css */
+.dashboard {
+    padding: 20px;
+  }
+  
+  .dashboard-header {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+  }
+  
+.link{
+  text-decoration: none;
+}
+
+  .posted-jobs {
+    margin-top: 60px;
+    padding-bottom: 20px;
+  }
+  
+  .posted-jobs h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .job-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* JobCard.css */
+  .job-card {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .job-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .job-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .edit-button {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #333333;
+  }
+  
